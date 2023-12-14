@@ -60,6 +60,7 @@ public class HomeController {
         String redirectUrl = bookPostService.pageProcess(pagination);
 
         if(redirectUrl != null){
+            System.out.println("redirect:/"+redirectUrl);
             return "redirect:/"+redirectUrl;
         }
         //log.info("pagination={}", pagination.getSearch());
